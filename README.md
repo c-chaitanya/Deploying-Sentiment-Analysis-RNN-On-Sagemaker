@@ -15,13 +15,13 @@ This entire project is done on Amazon sagemaker and uses some heavy GPU instance
 
 ### Instructions to execute in sagemaker
 
-1. Clone the repository.
+1. Clone the repository on your sagemaker notebook instance.
 	```
-		https://github.com/c-chaitanya/Deploying-Sentiment-Analysis-RNN-On-Sagemaker.git
+	https://github.com/c-chaitanya/Deploying-Sentiment-Analysis-RNN-On-Sagemaker.git
 	```
-2. Open the `SageMaker Project.ipynb` file.
+2. Run the `SageMaker Project.ipynb` file using.
 	```
-		jupyter notebook SageMaker Proejct.ipynb
+	jupyter notebook SageMaker Project.ipynb
 	```
 3. Read and follow the instructions! You can find and download the dataset for this project in the notebook.
 
@@ -45,8 +45,9 @@ for the project.
 - [Amazon SageMaker](https://ap-northeast-2.console.aws.amazon.com/sagemaker/home?region=ap-northeast-2#/landing) (Build, train, and deploy a model)
 - [tensorflow](https://www.tensorflow.org/) (LSTM classifier)
 
-### Delete the Endpoint
-Remember to always __SHUT DOWN YOUR ENDPOINT__ if you are no longer using it. You are charged for the length of time that the endpoint is running so if you forget and leave it on you could end up with an unexpectedly large bill.
-```
-	predictor.delete_endpoint()
-```
+### Shutdown/Remove These chargable instances post running
+### 1) Notebook instance
+### 2) Endpoint
+### 3) API gateway
+### 4) Lambda function
+### 5) Data in S3(optional) 
